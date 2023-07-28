@@ -1,0 +1,22 @@
+2023/07/28 14:24:26 2023-07-28 Generate - 336961
+2023/07/28 14:28:23 2023-07-28 user_id=2 Generate - 308514
+2023/07/28 14:28:26 2023-07-28 user_id=2 Generate - 493128
+2023/07/28 14:30:33 2023-07-28 user_id=2 Generate - 840563
+2023/07/28 14:31:03 2023-07-28 user_id=2 Generate - 613983
+2023/07/28 14:31:04 2023-07-28 user_id=2 Generate - 835998
+2023/07/28 14:36:40 2023-07-28 Generate - User: , OTP: 990036, Message: your otp is 990036
+2023/07/28 14:39:30 2023-07-28 Generate - User: , OTP: 782337, Message: your otp is 782337
+2023/07/28 14:39:31 2023-07-28 Generate - User: , OTP: 815308, Message: your otp is 815308
+2023/07/28 14:39:31 2023-07-28 Generate - User: , OTP: 815308, Message: Can Generate otp again in : 2023-07-28 14:41:00 +0800 PST
+2023/07/28 14:40:42 2023-07-28 Generate - User: 2, OTP: 815308, Message: Can Generate otp again in : 2023-07-28 14:41:00 +0800 PST
+2023/07/28 14:43:50 2023-07-28 Validate - User: 2, OTP: 815308, Message: OTP Expired
+2023/07/28 14:44:41 2023-07-28 Validate - User: 2, OTP: 599116, Message: OTP Expired
+2023/07/28 14:45:06 2023-07-28 Generate - User: 2, OTP: 634408, Message: your otp is 634408
+2023/07/28 14:45:20 2023-07-28 Validate - User: 2, OTP: 599116, Message: OTP Failed try remaining: 2
+2023/07/28 14:45:24 2023-07-28 Validate - User: 2, OTP: 599116, Message: OTP Failed try remaining: 1
+2023/07/28 14:45:26 2023-07-28 Validate - User: 2, OTP: 599116, Message: OTP Failed try remaining: 0
+2023/07/28 14:45:27 2023-07-28 Validate - User: 2, OTP: 599116, Message: Generate OTP again
+2023/07/28 14:45:36 2023-07-28 Generate - User: 2, OTP: 799532, Message: your otp is 799532
+2023/07/28 14:45:48 2023-07-28 Validate - User: 2, OTP: 799532, Message: OTP CORRECT
+2023/07/28 14:45:53 2023-07-28 Validate - User: 2, OTP: 799532, Message: OTP Expired
+2023/07/28 14:45:59 2023-07-28 Generate - User: 2, OTP: 443642, Message: your otp is 443642

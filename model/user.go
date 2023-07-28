@@ -30,3 +30,5 @@ func (user *User) HashPassword() error {
 	user.Password = string(bytes)
 	return err
 }
+
+

@@ -50,13 +50,15 @@ func (otp *OtpTable) resetOtp() {
 }
 
 func (otp *OtpTable) updateOtp() {
-	if otp.GeneratedOtpCount < 3 {
+	currentOtpCount := otp.GeneratedOtpCount + 1
+	if currentOtpCount < 3 {
 		otp.isExist()
 		otp.OtpUsageCount = 0
 		otp.IsUsed = false
 		otp.GeneratedOtpCount++
 		database.DB.Debug().Save(&otp)
 	} else {
+		otp.isExist()
 		otp.Regenerate = time.Now().Add(2 * time.Minute).UnixNano()
 		database.DB.Debug().Save(&otp)
 	}
@@ -73,6 +75,11 @@ func (otp *OtpTable) ValidateOtp(confirmOtp string) (bool, string) {
 		return false, "OTP Expired"
 	}
 
+	//can be added if the otp already used cant use it again
+	// if otp.IsUsed {
+	// 	return false, "OTP already used"
+	// }
+
 	if otp.OtpUsageCount >= 3 {
 		return false, "Generate OTP again"
 	}
@@ -82,7 +89,7 @@ func (otp *OtpTable) ValidateOtp(confirmOtp string) (bool, string) {
 		database.DB.Debug().Save(&otp)
 		return false, fmt.Sprintf("OTP Failed try remaining: %v", 3-otp.OtpUsageCount)
 	}
-
+	otp.Regenerate = 0
 	otp.OtpUsageCount = 0
 	otp.GeneratedOtpCount = 0
 	otp.OtpExpiredTime = 0
