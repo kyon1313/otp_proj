@@ -1,0 +1,9 @@
+2023/08/02 08:50:02 2023-08-02 Generate - User: 2, OTP: 521790, Message: your otp is 521790
+2023/08/02 08:50:20 2023-08-02 Generate - User: 2, OTP: 268977, Message: your otp is 268977
+2023/08/02 08:50:28 2023-08-02 Validate - User: 2, OTP: 799532, Message: OTP Failed try remaining: 2
+2023/08/02 08:50:33 2023-08-02 Validate - User: 2, OTP: 799532, Message: OTP Failed try remaining: 1
+2023/08/02 08:50:33 2023-08-02 Validate - User: 2, OTP: 799532, Message: OTP Failed try remaining: 0
+2023/08/02 08:50:34 2023-08-02 Validate - User: 2, OTP: 799532, Message: Generate OTP again
+2023/08/02 08:50:38 2023-08-02 Generate - User: 2, OTP: 268977, Message: Can Generate otp again in : 2023-08-02 08:52:00 +0800 PST
+2023/08/02 08:50:40 2023-08-02 Generate - User: 2, OTP: 268977, Message: Can Generate otp again in : 2023-08-02 08:52:00 +0800 PST
+2023/08/02 08:51:22 2023-08-02 Generate - User: 2, OTP: 268977, Message: Can Generate otp again in : 2023-08-02 08:52:00 +0800 PST

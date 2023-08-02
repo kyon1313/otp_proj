@@ -10,13 +10,13 @@ import (
 type OtpTable struct {
 	Id                uint   `json:"id" gorm:"primaryKey"`
 	Opt               string `json:"otp"`
-	GeneratedOtpCount int    `json:"generated_otp_count"`
-	OtpUsageCount     int    `json:"otp_usage_count"`
-	OtpExpiredTime    int64  `json:"otp_expired_time"`
+	GeneratedOtpCount int    `json:"generatedOtpCount"`
+	OtpUsageCount     int    `json:"otpUsageCount"`
+	OtpExpiredTime    int64  `json:"otpExpiredTime"`
 	UserId            uint   `json:"user_id"`
 	User              User   `gorm:"foreignKey:UserId"`
 	Regenerate        int64  `json:"regeneration"`
-	IsUsed            bool   `json:"is_used"`
+	IsUsed            bool   `json:"isUsed"`
 }
 
 func (otp *OtpTable) SaveOtp() string {

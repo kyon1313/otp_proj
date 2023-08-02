@@ -30,6 +30,4 @@ otp usagecount
 -can validate otp depending on OtpUsageCount limit in OtpConfig
 
 (message will be used depending on what otp config you need)
-
-
 */

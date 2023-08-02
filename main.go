@@ -16,6 +16,8 @@ func Routes(app *fiber.App) {
 
 }
 
+//another key feature of that is ,the otp count should reset when the day finish
+
 func main() {
 	database.Migration()
 	app := fiber.New()

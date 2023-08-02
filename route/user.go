@@ -8,9 +8,7 @@ import (
 
 func AddUser(ctx *fiber.Ctx) error {
 	user := new(model.User)
-
 	ctx.BodyParser(user)
-
 	err := user.HashPassword()
 	if err != nil {
 		return ctx.JSON(err)
